@@ -11,7 +11,7 @@ public class Application {
 
 	@GetMapping("/hello")
 	public String home() {
-		return "Hello ci-cd!";
+		return "Hello ci-cd2!";
 	}
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
