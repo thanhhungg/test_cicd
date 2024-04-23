@@ -55,8 +55,9 @@ jobs:
         file: ./Dockerfile
         push: true
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/clockbox:latest
+
   deploy:
-    needs: build-and-test
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to server
