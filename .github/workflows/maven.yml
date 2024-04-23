@@ -66,6 +66,6 @@ jobs:
             docker rm clockbox
             
             # Run a new container with the image pulled above
-            docker run -d -p 3001:3001 --name clockbox ${{ secrets.DOCKERHUB_USERNAME }}/clockbox:latest
+            docker run -d -p 3001:3001 --name ${{ secrets.DOCKERHUB_USERNAME }}/clockbox:latest
   
    
